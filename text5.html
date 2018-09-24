@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta   name="viewport" content="width=device-width,initial-scale=1,user-scalable=0"
+<meta charset="utf-8">
+	<link   rel=“stylesheet”
+		  href="path/to/weui-master/dist/style/weui.min.css">
+	<link href="jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
+	<link href="jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
+	<link href="jQueryAssets/jquery.ui.button.min.css" rel="stylesheet" type="text/css">
+<title>精益改善</title>
+<script src="jQueryAssets/jquery-1.11.1.min.js"></script>
+<script src="jQueryAssets/jquery.ui-1.10.4.button.min.js"></script>
+	
+</head>
+
+<body ontouchstart>
+	<center>
+	<div id="page1" date-role="page"></div>
+		 <p class="weui-footer__links">
+        <a href="javascript:home();" class="weui-footer__link">WeUI首页</a>
+    </p>
+	<div date-role="heder">
+		
+	<h1>半径计算</h1>
+	</div>
+	<div date-role="content" class="content">
+	</div>
+	<div date-role="footer">
+	</div>
+	<div class="weui-cells -cells_form">
+<div class="weui-cell">
+                <div class="weui-cell__hd"><label class="weui-label">玄长</label></div>
+                <div class="weui-cell__bd">
+                    <input class="weui-input" type="x" pattern="[0-9]*" placeholder="请输入弦长"/>
+                </div>
+            </div>
+<div class="weui-cells weui-cells_form">
+<div class="weui-cell">
+                <div class="weui-cell__hd"><label class="weui-label">弦高</label></div>
+                <div class="weui-cell__bd">
+                    <input class="weui-input" type="y" pattern="[0-9]*" placeholder="请输入弦长"/>
+                </div>
+            </div>
+
+</div>
+<div class="weui-cells weui-cells_form">
+<div class="weui-cell">
+                <div class="weui-cell__hd"><label class="weui-label">半径</label></div>
+<div class="weui-cell__bd">
+                    <input class="weui-input" type="z" pattern="[0-9]*" placeholder="请输入弦高"/>
+                </div>
+	<a href="javascript:;" class="weui_btn weui_btn_primary">按钮</a>
+
+
+                </script>
+	<script type="application/javascript">
+  function setOp(x, y);
+  {
+    var tb=document.getElementById("tb_calc");
+    tb.style.display = "none";
+          
+    document.getElementById("x").value = ""; 
+    document.getElementById("y").value = ""; 
+    document.getElementById("z").innerText = ""; 
+  
+    
+    tb.style.display = "block";
+  }
+  function button()
+  {
+    var x = parseInt(document.getElementById("x").value); 
+    var y = parseInt(document.getElementById("y").value);
+    var o = "";
+	var p="";
+	var q="";  
+    
+    var z = "";
+    o=x*x;
+	  p=8*y;
+	  q=o/p;
+	  z=q+y;
+      default:
+        z = '';
+    }
+    console.log(x, op, y, '=', z);
+    document.getElementById("z").innerText = z;
+  }
+</script>
+	
+	
+<div class="weui-footer weui-footer_fixed-bottom">
+   
+    <p class="weui-footer__text">车上配线2班出品</p>
+	</div>
+	</center>
+</body>
+</html>
